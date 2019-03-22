@@ -1,0 +1,27 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 90px 1fr 1fr 1fr 20px;
+
+  grid-template-areas:  "d1 d2 d3 d4 d5"
+                        "a1 a2 a3 a4 a5"
+                        "b1 b2 b3 b4 b5"
+                        "c1 c2 c3 c4 c5"
+                        "e1 e2 e3 e4 e5";
+  grid-column-gap: 10px;
+}
+
+#navbar{
+  background: gray;
+  grid-area: d1 / d1 / d1 / d6 ;
+  height: 90px;
+}
+
+#logo {
+  grid-area: d1 / d1 / d1 / d1;
+  justify-self: center;
+}
+
+#nav1{
+  grid-area: d1 / d2 / d1 / d2;
+}
